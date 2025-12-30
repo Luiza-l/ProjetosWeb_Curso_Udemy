@@ -164,6 +164,9 @@ section{
 }
 
 /* ----------- about --------- */
+.about{
+    margin-top: 50px;
+}
 .about .row{
     display: flex;
     align-items: center;
@@ -194,7 +197,10 @@ section{
 
 
 /* -----------  menu --------- */
-.menu .box-container{
+.menu{
+    margin-top: 50px;
+}
+.box-container{ 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
@@ -236,4 +242,72 @@ section{
 
 .menu .box-container .box:hover>*{
     color: var(--black);
+}
+
+/* ----------- review --------- */
+.review{
+    margin-top: 50px;
+}
+.review .box-container .box{
+    border: var(--border);
+    text-align: center;
+    padding: 3rem;
+    border-radius: 20px;
+}
+
+.review .box-container .box p{
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 2rem 0;
+    line-height: 1.8;
+    font-weight: lighter;
+}
+
+.review .box-container .box .user{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.review .box-container .box h3{
+    color: var(--main-color);
+    font-size: 2rem;
+    margin: 1rem 1rem;
+}
+
+/* ------------ endereço ------- */
+.address{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ------- footer ---------- */
+.footer{
+    margin-top: 50px;
+    text-align: center;
+    background-color: var(--black);
+}
+
+.footer .share{
+    padding: 1rem 0;
+}
+
+.footer .share p{
+    color: var(--main-color);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+
+.footer .share img{
+    margin: 0.3;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.footer .share img:hover{
+    background-color: var(--main-color);
 }
